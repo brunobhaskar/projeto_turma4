@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+}
+
+/*PALETA DE CORES*/
+:root {
+    --azul: #7eb9ba;
+    --laranja: #eb8200;
+  }
+
+
+
+/* SESSÃO CABEÇARIO*/
+
+header{
+    /*diplay e alinhamento de conteudo*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*Dimenção(height) e cores,*/
+    background-color: white;
+    color: black;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.menu{
+    display: flex;
+    gap: 3rem;
+    color: var(--laranja);
+    list-style: none;
+}
+
+
+nav ul li a{
+    color: var(--laranja) solid;
+    text-decoration:none;
+    text-align: left;
+    padding: 5px; 
+}
+
+.logo{
+    height: 32px;
+}
+
+.flag{
+    height: 12px;
+}
+
+/*SESSÃO DE APRESENTAÇÃO*/
+
+section{
+    background-color: var(--azul);
+    display: flex;
+}
+
+.titulo{
+    padding-left: 50px;
+    padding-top: 50px;
+    background-color: var(--azul);
+}
+
+section div{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    background-color: #569798;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+section div span{
+    padding: 15px;
+}
+
+.foto{
+    width: 400px;
+}
+
+/* SESSÃO DE PROJETOS E EVENTOS*/
+.cards{
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards img{
+    width: 180px;
+}
+
+/* SESSÃO DE RODAPÉ*/
+footer{
+    display: flex;
+    height: 120px;
+    background-color: var(--laranja);
+    align-items: center
+}
+
+.ods{
+    width: 80px;
+}
+
+.informacoes_de_contato{
+    width: 600px; 
+}
+
+.contatos{
+    list-style: none;
+    color: black;
+}
