@@ -55,11 +55,12 @@ nav ul li a{
 section{
     background-color: var(--azul);
     display: flex;
+    padding: 10px;
 }
 
 .titulo{
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 60px;
+    padding-top: 30px;
     background-color: var(--azul);
 }
 
@@ -71,11 +72,10 @@ section div{
     background-color: #569798;
     margin-left: 50px;
     margin-right: 50px;
+    width: 95%;
 }
 
-section div span{
-    padding: 15px;
-}
+
 
 .foto{
     width: 400px;
@@ -94,6 +94,29 @@ section div span{
 .cards img{
     width: 180px;
 }
+
+/*SESSÃO DE CONTATOS*/
+section div span{
+    display: block;
+    color: black;
+    align-items:first baseline;
+    background-color: #569798;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.contato{
+    display: block;
+}
+
+.apoie{
+    float:left;
+    padding: 10px;
+    margin-right: 50px;
+    
+}
+
 
 /* SESSÃO DE RODAPÉ*/
 footer{
