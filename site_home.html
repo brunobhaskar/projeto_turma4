@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" type="text/css" href="./estilo.css" media="screen"/>
+    <script type="text/javascript" defer src="script.js"> </script>
 </head>
+<body>
     <!--COBEÇARIO -->
     <header class="cabecario">
 
         <!--ICONE DE LOGO -->
-        <img class="logo" src="./imagens/logo.png">
+        <img id ="logo" class="logo" src="./imagens/logo.png">
 
         <!--BARRA DE NAVEGAÇÃO -->
         <nav>
@@ -23,10 +25,7 @@
 
         <!--SELEÇÃO DE IDIOMAS-->
         <img class="flag" src="./imagens/ingles.png">
-
     </header>
- 
-    
 
     <!--SESSÃO DE ARESENTAÇÃO GERAL -->
     <h1 class="titulo">Quem Somos</h1>
@@ -73,28 +72,28 @@
     </section>
 
     <!--CADASTRO E DOAÇÕES -->
-    <h2 class="titulo"> Entre em contato</h2>
     <section>
-        <div>
-            <span>
-                <p>Nome:
-                    <br/> 
-                    <input type="text"
-                     name="nome"> 
-                </p>       
-                <p>E-mail:
-                    <br /> 
-                    <input type="text" s name="replyto"> 
-                </p>   
-                <p>Mensagem
-                    <br/> 
-                    <input type="text" name="Comentarios"> 
-                </p> 
-            </span>
-            <span>
-                <h2>Apoie essa causa</h2>
+        <div class="contato">
+            <form method="post">
+                <h2>Entre em contato conosco</h2>
                 <br>
-            </span>
+                <div>
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="usuario_nome" />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="usuario_email" />
+                </div>
+                <div>
+                  <label for="msg">Mensagem:</label>
+                  <textarea id="msg" name="usuario_msg"></textarea>
+                </div>
+                <div class="button">
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
+            
         </div>
     </section>
 
@@ -103,7 +102,7 @@
         <!--ENDEREÇO E CONTATOS-->
         <div class="informacoes_de_contato">
             <ul class="contatos">
-                <li><a>Alamenda Moara Nº 4, Águas Lindas, Ananindeua-PA</a></li>
+                <li><a> Alamenda Moara Nº 4, Águas Lindas, Ananindeua-PA </a></li>
                 <li><a>ananindeua@amurt.org.br</a></li>
                 <li><a>bcmoaraliterario@gmail.com</a></li>
             </ul>
@@ -111,7 +110,7 @@
         <img class="ods" src="./imagens/ODS10-1 (1).jpg">
         <img class="ods" src="./imagens/ODS4.jpg">
     </footer>
-<body>
+
     
 </body>
 </html>
