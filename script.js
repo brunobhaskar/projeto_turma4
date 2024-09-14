@@ -33,42 +33,45 @@ projetos.forEach((projeto) => {
 
         // CAPTURANDO OS ELEMENTOS PELO DOM //
 // ---------- campo USERNAME ---------- //
-let usernameInput = document.getElementById("username");
-let usernameLabel = document.querySelector('label[for="username"]');
-let usernameHelper = document.getElementById("username-helper");
+let usernameInput = document.getElementById("username")
+let usernameLabel = document.querySelector('label[for="username"]')
+let usernameHelper = document.getElementById("username-helper")
 
 
 // --------- campo E-MAIL -------------//
-let emailInput = document.getElementById("email");
-let emailLabel = document.querySelector('label[for="email"]');
-let emailHelper = document.getElementById("email-helper");
+let emailInput = document.getElementById("email")
+let emailLabel = document.querySelector('label[for="email"]')
+let emailHelper = document.getElementById("email-helper")
 
 // --------- campo IDADE -------------//
-let idadeInput = document.getElementById("idade");
-let idadeLabel = document.querySelector('label[for="idade"]');
-let idadeHelper = document.getElementById("idade-helper");
+let idadeInput = document.getElementById("idade")
+let idadeLabel = document.querySelector('label[for="idade"]')
+let idadeHelper = document.getElementById("idade-helper")
 
 // ---------botão ENVIAR ------------//
-let form = document.getElementById('cadastroForm');
+let form = document.getElementById('cadastroForm')
 
 
 // CAMPOS OBRIGATORIOS//
 // Mostrar popup de campo obrigatório  "focus""
-function campoObrigatorio(input, label){ 
-    input.addEventListener("focus", function() {
-        label.classList.add("required-popup")
-    });
-} ;
-// Ocultar popup de campo obrigatório  "blur"
-function ocultarCampoObrigatorio(input, label){ 
-    input.addEventListener("blur", function() {
-        label.classList.remove("required-popup")
-    });
-} ;
+function campoObrigatorio(imput, label){ 
+  imput.addEventListener("focus", function() {
+    label.classList.add("required-popup")
+  });
+} 
+campoObrigatorio (usernameInput, usernameLabel)
+campoObrigatorio (emailInput, emailLabel)
+campoObrigatorio (idadeInput, idadeLabel)
 
-ocultarCampoObrigatorio (usernameInput, usernameLabel);
-ocultarCampoObrigatorio (emailInput, emailLabel);
-ocultarCampoObrigatorio (idadeInput, idadeLabel);
+// Ocultar popup de campo obrigatório  "blur"
+function ocultarCampoObrigatorio(imput, label){ 
+  imput.addEventListener("blur", function() {
+    label.classList.remove("required-popup")
+  });
+} 
+ocultarCampoObrigatorio (usernameInput, usernameLabel)
+ocultarCampoObrigatorio (emailInput, emailLabel)
+ocultarCampoObrigatorio (idadeInput, idadeLabel)
 
 
 // VALIDAÇÃO - VALOR DO IMPUT //
@@ -112,7 +115,7 @@ if (isNaN(inputValue) || inputValue < 18) {
 
     idadeHelper.innerText = ""
 }
-})
+});
 
 emailInput.addEventListener("input", (elemento) => {
     let inputValue = elemento.target.value;
@@ -122,15 +125,14 @@ emailInput.addEventListener("input", (elemento) => {
         emailInput.classList.remove("correct");
         emailInput.classList.add("error");
         emailHelper.classList.add("visible");
-        emailHelper.innerText = "Por favor, insira um e-mail válido";
+        emailHelper.innerText
+         = "Por favor, insira um e-mail válido";
     } else {
         emailInput.classList.remove("error");
         emailInput.classList.add("correct");
         emailHelper.innerText = "";
     }
 });
-
-
 
 
 // Impede o envio do formulário caso a idade seja inválida
@@ -146,7 +148,6 @@ if (isNaN(idade) || idade < 18) {
 console.log(document);
 
 // Cadastro efetuado com sucesso //
-        
         
         
         
