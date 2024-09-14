@@ -1,7 +1,14 @@
 *{
     margin: 0;
+    padding: 0;
 }
-
+body{
+    background-color: #7eb9ba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
 /*PALETA DE CORES*/
 :root {
     --azul: #7eb9ba;
@@ -17,6 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     /*Dimenção(height) e cores,*/
     background-color: white;
@@ -57,10 +65,18 @@ section{
     display: flex;
 }
 
+.titulo1{
+    padding-left: 50px;
+    padding-top: 50px;
+    background-color: var(--azul);
+    
+}
 .titulo{
     padding-left: 50px;
     padding-top: 50px;
     background-color: var(--azul);
+    text-align: center;
+    font-family: Garamond;
 }
 
 section div{
@@ -100,8 +116,13 @@ section div span{
 }
 
 /*SESSÃO DE CONTATOS*/
+.sessao_contatos{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;   
+}
 .contato{
-    width: 400px;
+    width: 30%;
     align-items:start;
     padding: 1rem 1rem;
     border-radius: 16px;
@@ -111,15 +132,17 @@ section div span{
 
 form {
     margin: 0 auto;
-    width: 395px;
+    width: 200px;
     padding: 1em 1em;
-    border: 1px solid #ccc;
     border-radius: 2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente, se necessário */
+    height: 300px;  
 }
 
-form div + div {
-    margin-top: 1em;
-}
 
 label {
     display: inline-block;
@@ -141,12 +164,75 @@ textarea {
   }
 
 
+/* Botão de envio */
+
+.btn_enviar {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno (padding) */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Deixa os cantos arredondados */
+    cursor: pointer; /* Mostra o ícone de clique no botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.btn_enviar:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão no hover */
+}
+
+.btn_enviar:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.7); /* Sombra de foco ao clicar ou tab */
+}
+
+.btn_enviar:active {
+    background-color: #3e8e41; /* Cor mais escura ao clicar */
+    transform: scale(0.98); /* Leve redução no tamanho ao clicar */
+}
+
+
+/*SLIDER DE FOTOS*/
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
 /* SESSÃO DE RODAPÉ*/
 footer{
     display: flex;
     height: 120px;
     background-color: var(--laranja);
-    align-items: center
+    align-items: center;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .ods{

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="./estilo.css" media="screen"/>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!--COBEÇARIO -->
+    <header class="cabecario">
+
+        <!--ICONE DE LOGO -->
+        <img id ="logo" class="logo" src="./imagens/logo.png">
+
+        <!--BARRA DE NAVEGAÇÃO -->
+        <nav>
+            <ul class="menu">
+                <li><a href="http://127.0.0.1:5500/home.html">Quem somos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+            </ul>
+        </nav>
+
+        <!--SELEÇÃO DE IDIOMAS-->
+        <img class="flag" src="./imagens/ingles.png">
+    </header>
+
+    <!--SESSÃO DE ARESENTAÇÃO GERAL -->
+    <h1 class="titulo1">Quem Somos</h1>
+    <br>
+    <section>
+        <div>
+            <span>Somos uma organização social com objetivo de promover o desenvolvimento integrado das potencialidades física, mental e espiritual da criança, do adolescente, do jovem e moradores em geral da comunidade Moara e comunidades adjacentes, no bairro de Águas Lindas, área periférica da região metrolitana de Belém. Atuamos em nossa comunidade desde 2001, promovendo ações em áreas como Educação, Cultura, Assistência Social e Saúde Integrativa. A sigla CENHAMAR, que significa Centro de Educação neo-humanista de Ananda Marga, se refere a um dos Centros Educacionais mantidos pela Ananda Marga, uma organização sócio espiritual internacional fundada na Índia em 1955 pelo espiritualista e filósofo P.R. Sarkar. Essa organização propaga a filosofia e a prática do tantra yoga e tem como objetivo maior promover o autoconhecimento e o serviço a humanidade.</span>
+            <span> <img class="foto" src="./imagens/IMG_0552-01.jpg"></span>
+        </div>
+    </section>
+
+    <!--SESSÃO DE SERVIÇOS E PROJETO-->
+    <H1 class="titulo"> Projetos </H1>
+    <section id = "projetos">
+
+    </section>
+
+
+    <!--EVENTOS -->
+    <h1 class="titulo">Eventos</h1>
+    <br>
+    <section id="eventos">
+        <div class="cards">
+            <h2>Arrastapé dos Kurumins</h2>
+            <img src="./imagens/IMG_6169.JPG">
+        </div>
+        <div class="cards">
+            <h2>Quintal Visagento</h2>
+            <img src="./imagens/312726783_184057534174986_4581559878233197807_n (1).jpg">
+        </div>
+        <a href="http://127.0.0.1:5500/kurumin.html">
+            <div class="cards">
+                <h2>Kurumin</h2>
+                <img src="./imagens/kurumin.jpeg">
+            </div>        
+        </a>,
+    </section>
+
+    <!--CADASTRO E DOAÇÕES -->
+    <section class="sessao_contatos">
+        <div class="cards">
+            <h1>ENTRE EM CONTATO</h1> 
+            <br>
+            <p>Tem vontade de apoioar essa causa?
+                Entre em contato. Existem diversas formas os  projetos do CENHAMAR. Seja você uma pessoa que deseja fazer um trablaho voluntário, doação de materiais pedagógicos, de limpeza ou consumo. Toda ajuda é bem vinda. Esperamos seu contato.
+            </p>
+            <br>
+            <h4>DOE PELA CHAVE PIX:</h4>
+            <H5>CNPJ: 92.251.354/0039-08</H5>
+        </div>
+        <div class="contato">
+            <form id = "cadastroForm" action="">
+                <label for="username"></label>
+                <p>Nome*</p>
+                <input type="text" id="username" name="username">
+                <p id="username-helper" class="helper-text"></p>
+            
+                <label for="email"></label>
+                <p>E-mail*</p>
+                <input type="email" id="email" name="email" required>
+                <p id="email-helper" class="helper-text"></p>
+            
+                <label for="idade"></label>
+                <p>Idade*</p>
+                <input type="number" id="idade" name="idade" required min="1">
+                <p id="idade-helper" class="helper-text"></p>
+                <br>    
+                <label for="msg"></label>
+                <p>Deixe sua mensagem:</p>
+                <textarea id="msg">      
+                </textarea><br></textarea>
+                <button type="submit" class ="btn_enviar">Enviar</button>
+            </form>         
+        </div>
+    </section>
+
+    <!--RODAPÉ-->
+    <footer>
+        <!--ENDEREÇO E CONTATOS-->
+        <div class="informacoes_de_contato">
+            <ul class="contatos">
+                <li><a> Alamenda Moara Nº 4, Águas Lindas, Ananindeua-PA </a></li>
+                <li><a>ananindeua@amurt.org.br</a></li>
+                <li><a>bcmoaraliterario@gmail.com</a></li>
+            </ul>
+        </div>
+        <img class="ods" src="./imagens/ODS10-1 (1).jpg">
+        <img class="ods" src="./imagens/ODS4.jpg">
+    </footer>
+
+    
+</body>
+</html>

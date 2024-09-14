@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>biblioteca</title>
     <link rel="stylesheet" type="text/css" href="./estilo.css" media="screen"/>
+    <script src="./script.js" defer></script>
 </head>
     <!--COBEÇARIO -->
     <header class="cabecario">
@@ -15,9 +16,9 @@
         <!--BARRA DE NAVEGAÇÃO -->
         <nav>
             <ul class="menu">
-                <li><a href="ABOUT">Quem somos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="http://127.0.0.1:5500/home.html">Quem somos</a></li>
+                <li><a href="http://127.0.0.1:5500/home.html">Projetos</a></li>
+                <li><a href="http://127.0.0.1:5500/home.html">Eventos</a></li>
             </ul>
         </nav>
 
@@ -31,7 +32,15 @@
     <section>
         <div>
             <span>A Biblioteca Comunitária Moara tem o objetivo de promover o acesso ao livro, leitura e literatura dentro da comunidade. Para além disso, a Biblioteca também atua em incidência politica para a garantia da leitura como um direito humano no Estado e Município. Este é um projeto desenvolvido em cooperação com a comunidade e está ligado tanto a Rede de Bibliotecas Comunitárias Amazônia Literária quanto a Rede Nacional de Bibliotecas Comunitária RNBC.</span>
-            <span> <img class="foto" src="./imagens/IMG_4958.JPG"> </span>
+            <span> 
+                <div class="slider-container">
+                    <button id="prev">←</button>
+                    <div id="slider">
+                        <!-- As imagens serão inseridas aqui -->
+                    </div>
+                    <button id="next">→</button>
+                </div>
+            </span>
         </div>
     </section>
 
