@@ -1,4 +1,4 @@
-console.log('Você está na página KURUMIN.');
+console.log('Você está na página Biblioteca.');
 
 // Código para a página Kurumin
 const imageData = [
